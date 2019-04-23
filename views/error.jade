@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  br
+  h1="El contenido no se encuentra disponible"
+  pre #{error.m}

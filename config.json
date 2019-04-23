@@ -1,0 +1,36 @@
+{
+    "HttpPort": 4000,
+    "user": "DBF",
+    "password": "opa1..",
+    "server": "opa139\\sql2016",
+    "database": "Fondoprueba",
+    "requestTimeout": 60000,
+    "options": {
+        "useUTC": true,
+        "encrypt": false
+    },
+    
+     "ssl":{
+        "use": false,
+        "selfsigned": true        
+    },        
+    
+    "pool": {
+        "max": 100,
+        "min": 50,
+        "idleTimeoutMillis": 30000
+    },
+  
+ "env": "dev",
+     "emailConfig":{
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "secure": true,
+        "user": "opasasco@gmail.com",
+        "pass": "password1."
+        
+    },
+      "module.exports" : {  
+  "TOKEN_SECRET" : "process.env.TOKEN_SECRET"
+  }
+}
